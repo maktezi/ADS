@@ -1,3 +1,5 @@
+export const title = "Compare Our Top 3 VPNs"
+
 export const ads = [
     {
         logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/79/ExpressVPN-logo.svg/2560px-ExpressVPN-logo.svg.png',

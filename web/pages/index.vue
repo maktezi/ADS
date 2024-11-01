@@ -1,11 +1,10 @@
 <template>
   <main class="p-4 flex items-center justify-center">
-    <div class="p-0 md:p-2 xl:p-6 space-y-4 md:w-[800px] xl:w-[1400px]" v-if="!isMobile">
-      <label class="text-3xl font-bold">
-        Compare Our Top 3 VPNs
-      </label>
+<!--  PC/Tablet  -->
+    <div v-if="!isMobile" class="p-0 md:p-2 xl:p-6 space-y-4 md:w-[800px] xl:w-[1400px]">
+      <label class="text-3xl font-bold">{{ title }}</label>
 
-      <div v-for="ad in ads" :key="ad.logo" class="px-4 py-4 shadow-xl" >
+      <div v-for="ad in ads" :key="ad.logo" class="px-4 py-4 shadow-lg bg-white" >
         <div class="flex items-center justify-evenly gap-8">
           <div>
             <div class="title font-bold text-xl flex justify-center items-center">
@@ -50,15 +49,27 @@
                 {{ ad.website }}
               </p>
             </div>
+
           </div>
         </div>
       </div>
+    </div>
+
+<!--  Mobile  -->
+    <div v-else class="mt-6">
+      <label class="text-3xl font-bold">{{ title }}</label>
+
+      <NuxtLink v-for="ad in ads" :key="ad.logo" class="title font-bold text-xl flex justify-center items-center">
+        <img :src="ad.logoMobile"  alt="logo" :class="ad.logoClass"/>
+      </NuxtLink>
     </div>
   </main>
 </template>
 
 <script setup lang="ts">
-import { ads } from '~/composables/constants'
+import {ads, title} from '~/composables/constants'
 
 const isMobile = inject('isMobile')
+
+
 </script>
