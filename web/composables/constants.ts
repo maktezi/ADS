@@ -37,7 +37,7 @@ export const ads = [
                 detail: "iOS, Android"
             }
         ],
-        website: 'expressvpn.com'
+        website: 'https://expressvpn.com'
     },
     {
         id: 2,
@@ -75,7 +75,7 @@ export const ads = [
                 detail: "iOS, Android"
             }
         ],
-        website: 'cyberghostvpn.com'
+        website: 'https://cyberghostvpn.com'
     },
     {
         id: 3,
@@ -114,6 +114,6 @@ export const ads = [
                 detail: "iOS, Android"
             }
         ],
-        website: 'expressvpn.com'
+        website: 'https://nordvpn.com/cybersecurity-site'
     }
 ]

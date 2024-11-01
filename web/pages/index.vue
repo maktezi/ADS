@@ -40,7 +40,7 @@
             </div>
 
             <div class="flex flex-col md:items-start md:pl-4 xl:items-center justify-center space-y-2">
-              <a :href="`https:\\${ad.website}`" target="_blank" class="bg-[#e64a19] text-white py-2 px-4 rounded-md flex items-center justify-center">
+              <a :href="ad.website" target="_blank" class="bg-[#e64a19] text-white py-2 px-4 rounded-md flex items-center justify-center">
                 <span>Visit website</span>
                 <span><Icon name="ri:arrow-right-s-line" class="size-3" /></span>
               </a>
@@ -90,7 +90,7 @@
               </li>
             </ul>
           </div>
-          <a :href="`https://www.${ads[activeCard].website}`" target="_blank" class="bg-[#e64a19] text-white py-2 px-4 rounded flex items-center justify-center w-full py-4 mt-2 rounded-xl">
+          <a :href="ads[activeCard].website" target="_blank" class="bg-[#e64a19] text-white py-2 px-4 rounded flex items-center justify-center w-full py-4 mt-2 rounded-xl">
             <span>Visit website</span>
             <span><Icon name="ri:arrow-right-s-line" class="size-3" /></span>
           </a>
