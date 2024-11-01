@@ -1,75 +1,36 @@
-# Nuxt Minimal Starter
+# Responsive HTML Page with Popup Implementation
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Overview
 
-## Setup
+This project demonstrates the development of a responsive HTML page using **Nuxt.js** and **Tailwind CSS**, featuring a popup that appears 5 seconds after the page loads. The design ensures a seamless user experience across various devices.
 
-Make sure to install dependencies:
+## Technology Stack
 
-```bash
-# npm
-npm install
+- **Nuxt.js**: Framework for Vue.js, enabling server-side rendering and improved SEO.
+- **Tailwind CSS**: Utility-first CSS framework for rapid styling and responsiveness.
+- **Vue.js**: Reactive component-based architecture used within Nuxt.js.
 
-# pnpm
-pnpm install
+## Features
 
-# yarn
-yarn install
+- **Responsive Design**: The layout adapts fluidly across three breakpoints: desktop, tablet, and mobile.
+- **Popup Implementation**: A responsive popup appears after a 5-second delay, with a close button for user convenience.
+- **Performance Optimization**: Utilizes optimized SVGs and lazy loading for images to enhance performance.
 
-# bun
-bun install
-```
+## Installation
 
-## Development Server
+To set up this project locally, follow these steps:
 
-Start the development server on `http://localhost:3000`:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/maktezi/ADS.git
+2. **Navigate to the project directory**:
+   ```bash
+   cd ADS
 
-```bash
-# npm
-npm run dev
+3. **Install dependencies**:
+   ```bash
+   npm install
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+4. **Run the development server**:
+   ```bash
+   npm dev
